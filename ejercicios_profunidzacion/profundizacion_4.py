@@ -43,5 +43,20 @@ https://www.pythonforbeginners.com/dictionary/python-split
 Cualquier duda con el método split pueden consultarla por el campus
 '''
 
+from posixpath import split
+
+
 print('Jugando con texto')
 # Empezar aquí la resolución del ejercicio
+print ("Ingrese el nombre completo del padre :")
+nombre_padre = str(input())
+print ("Ingrese el nombre completo de la madre :")
+nombre_madre = str(input())
+print ("ingrese el nombre del Hijo/a")
+nombre_hijo = str(input())
+apellidop = nombre_padre.split()[1]
+apellidom = nombre_madre.split()[1]
+print ("el nombre completo del hijo/a es : ",nombre_hijo,apellidop,apellidom)
+
+
+
